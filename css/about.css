@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+:root{
+    --font-poppins: 'Poppins', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-poppins);
+}
+
+
+.content-one{
+    display: flex;
+    gap: 61px;
+    margin: 180px 70px;
+}
+.co-one, .co-two, .co-three{
+    text-align: center;
+}
+.co-one p, .co-two p, .co-three p{
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.co-one .co-p1, .co-two .co-p1, .co-three .co-p1{
+    font-weight: 500;
+    font-size: 18px;
+    color: #878787;
+    margin: 0;
+}
+
+.content-two{
+    display: flex;
+    gap: 130px;
+    margin: 180px 70px;
+    height: 750px;
+}
+.ct-one{
+    background: rgba(6, 154, 186, 0.5);
+    width: 45%;
+    height: 550px;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background: url('https://vectorified.com/images/facebook-no-profile-picture-icon-27.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ct-two{
+    width: 55%;
+}
+.ct-two p{
+    font-size: 18px;
+    margin: 50px 0;
+    color: #484848;
+}
+.ct-two .ct-p1{
+    font-weight: 600;
+    font-size: 36px;
+    color: black;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+.ct-two .ct-p2{
+    font-weight: 500;
+    font-size: 18px;
+    color: #858585;
+    margin: 0;
+}
+
+.content-three{
+    position: relative;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 360px 0;
+}
+.content-three img{
+    z-index: -1;
+    position: absolute;
+}
+.cth-one, .cth-two, .cth-three, .cth-four{
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.cth-one .cth-logos, .cth-two .cth-logos, .cth-three .cth-logos, .cth-four .cth-logos{
+    margin-right: 25px;
+}
+.cth-one .ps p, .cth-two .ps p, .cth-three .ps p, .cth-four .ps p{
+    font-weight: 600;
+    font-size: 48px;
+    display: inline-block;
+    margin: 0;
+    margin-top: -10px;
+}
+.cth-one .ps .cth-p1, .cth-two .ps .cth-p1, .cth-three .ps .cth-p1, .cth-four .ps .cth-p1{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    margin-top: -20px;
+}
+.plus{
+    margin-bottom: 55px;
+    margin-left: 10px;
+}
+
+.content-four{
+    text-align: center;
+    margin: 180px 70px;
+}
+.places{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 500px;
+}
+.p-left{
+    position: relative;
+    background: url('https://4.bp.blogspot.com/-kXdj2ZESV3k/WZq0PeUpbUI/AAAAAAAAAoQ/jEQH0_QoMvQK4X930Ep34H-eGUu-lq8DACEwYBhgL/s1600/Jan2017_Kanuhura_2039.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: .5; */
+    width: 50%;
+    border-radius: 10px;
+}
+.p-left p{
+    margin: 0px;
+    position: absolute;
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    left: 20px;
+    bottom: 5px;
+}
+
+.p-right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p-up{
+    position: relative;
+    background: url('https://gttp.imgix.net/224999/x/0/amanpulo-philippines-west-villa-clubhouse-high-res-13855.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: .5; */
+    height: 50%;
+    border-radius: 10px;
+}
+.p-up p{
+    margin: 0px;
+    position: absolute;
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    left: 20px;
+    bottom: 5px;
+}
+
+.p-down{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 50%;
+}
+.p-downl{
+    position: relative;
+    background: url('https://i2.wp.com/www.oyster.com/uploads/sites/35/2019/08/7.-pool-v16692277-nw-2000.jpg?fit=2000%2C1333&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: .5; */
+    width: 50%;
+    border-radius: 10px;
+}
+.p-downl p{
+    margin: 0px;
+    position: absolute;
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    left: 20px;
+    bottom: 5px;
+}
+
+.p-downr{
+    position: relative;
+    background: url('https://i0.wp.com/r-cf.bstatic.com/images/hotel/max1024x768/477/47742273.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: .5; */
+    width: 50%;
+    border-radius: 10px;
+}
+.p-downr p{
+    margin: 0px;
+    position: absolute;
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    left: 20px;
+    bottom: 5px;
+}
+
+.cf-p1{
+    color: #878787;
+    font-size: 36px;
+    margin-bottom: -20px;
+}
+.cf-p2{
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 50px;
+}

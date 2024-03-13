@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+:root{
+    --font-poppins: 'Poppins', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-poppins);
+}
+
+
+.accounts{
+    /* width: 70%; */
+    width: 1080px;
+    margin: 180px 72px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.accounts hr{
+    width: 100%;
+    margin: 5px 0px 30px 0px;
+} 
+.accounts hr.is-active{
+    margin-bottom: 30px;
+}
+
+.personal-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.personal-info p{
+    margin-bottom: 0;
+}
+.personal-info svg{
+    position: absolute;
+    right: 15px;
+}
+
+.pi-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.pi-contents.is-active{
+    display: block;
+    margin-bottom: 30px;
+}
+.pi-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.pi-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.pi-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: -8px;
+}
+.pi-content p1{
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.pi-content a{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    right: 10px;
+}
+
+
+
+.login-security{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.login-security.is-active{
+    margin-top: 30px;
+}
+.login-security p{
+    margin-bottom: 0;
+}
+.login-security svg{
+    position: absolute;
+    right: 15px;
+}
+
+.ls-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.ls-contents.is-active{
+    display: block;
+    margin-bottom: 50px;
+}
+.ls-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.ls-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.ls-content p2{
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+.ls-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: -8px;
+}
+.ls-content p1{
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.ls-content a{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    right: 10px;
+}
+.device p, .device p1{
+    margin-left: 50px;
+}
+
+
+
+.payments{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.payments.is-active{
+    margin-top: 30px;
+}
+.payments p{
+    margin-bottom: 0;
+}
+.payments svg{
+    position: absolute;
+    right: 15px;
+}
+
+.p-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.p-contents.is-active{
+    display: block;
+    margin-bottom: 50px;
+}
+.p-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.p-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.p-content p{
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+    margin-bottom: -8px;
+}
+.p-content .balance{
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+.p-content p1{
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.p-content p2{
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 12px;
+    right: 10px;
+}
+.p-content a{
+    font-weight: 600;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.p-content button{
+    display: block;
+    font-size: 20px;
+    height: 46px;
+    padding: 0 25px;
+    margin: 10px 0px 30px 0px;
+    border-radius: 23px;
+    background-color: black;
+    color: white;
+}
+
+
+.notifications{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.notifications.is-active{
+    margin-top: 30px;
+}
+.notifications p{
+    margin-bottom: 0;
+}
+.notifications svg{
+    position: absolute;
+    right: 15px;
+}
+
+.n-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.n-contents.is-active{
+    display: block;
+    margin-bottom: 50px;
+}
+.n-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.n-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.n-content p2{
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+.n-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: -8px;
+}
+.n-content p1{
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.n-content a{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    right: 10px;
+}
+.br{
+    display: block;
+    height: 20px;
+}
+
+
+.privacy-sharing{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.privacy-sharing.is-active{
+    margin-top: 30px;
+}
+.privacy-sharing p{
+    margin-bottom: 0;
+}
+.privacy-sharing svg{
+    position: absolute;
+    right: 15px;
+}
+
+.ps-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.ps-contents.is-active{
+    display: block;
+    margin-bottom: 50px;
+}
+.ps-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.ps-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.ps-content p2{
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+.ps-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: -8px;
+}
+.ps-content p svg{margin-left: 12px;
+}
+.ps-content p1{
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.ps-content .ps-p1{
+    margin: 8px 0px 0px 0px;
+    width: 70%;
+    line-height: 20px;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    position: absolute;
+    left: 46%;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 62px;
+    height: 33px;
+    background: #D9D9D9;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: #a0a0a0;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 50px;
+  }
+
+
+
+.global-preferences{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.global-preferences.is-active{
+    margin-top: 30px;
+}
+.global-preferences p{
+    margin-bottom: 0;
+}
+.global-preferences svg{
+    position: absolute;
+    right: 15px;
+}
+
+.gp-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.gp-contents.is-active{
+    display: block;
+    margin-bottom: 50px;
+}
+.gp-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.gp-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.gp-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: -8px;
+}
+.gp-content p1{
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.gp-content a{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    right: 10px;
+}
+
+
+.referral{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.referral.is-active{
+    margin-top: 30px;
+}
+.referral p{
+    margin-bottom: 0;
+}
+.referral svg{
+    position: absolute;
+    right: 15px;
+}
+
+.rcc-contents{
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
+.rcc-contents.is-active{
+    display: block;
+    margin-bottom: 50px;
+}
+.rcc-contents hr{
+    width: 100%;
+    margin: 20px 0;
+}
+.rcc-contents hr.is-active{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.rcc-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: -8px;
+}
+.rcc-content p1{
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+.rcc-content p2{
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    right: 130px;
+}
+
+.rcc-content a{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    right: 10px;
+}

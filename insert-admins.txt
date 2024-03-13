@@ -1,0 +1,2 @@
+INSERT INTO `admins`(`FirstName`, `LastName`, `EmailAddress`, `Password`, `MobileNumber`) VALUES
+('a','a','@gmail.com','0','0')

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+   padding: 20px;
+   padding-bottom: 60px;
+   width: 580px;
+   height: 668px;
+
+}
+
+.container form{
+padding: 20px;
+border-radius: 5px;
+align-items: center;
+text-align: center;
+}
+
+.container form input{
+    width: 400px;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+button{
+    background: black;
+    width: 180px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+
+}
+
+.body{
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+   position: absolute;
+   
+}
+
+h1 {
+    text-align: left;
+    height: 10%;
+}
+
+p{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+p1{
+    text-align: left;
+    width: 196px;
+    height: 30px;
+    left: 756px;
+
+}
+
+.get-touch {
+    width: 697px;
+    height: 612px;
+}
+
+.get-touch .contacts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    gap: 50px;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 50px;
+    height: 200px;
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+:root{
+    --font-poppins: 'Poppins', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-poppins);
+}
+
+
+.tips-articles{
+    text-align: center;
+    margin: 180px 72px;
+}
+.ta-head{
+    font-weight: 600;
+    font-size: 60px;
+}
+.ta-info{
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.ta-contents{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.ta-c-left{
+    width: 37%;
+    text-align: left;
+}
+.ta-c-leftt{
+    padding: 45px 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.ta-c-leftt p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.ta-c-leftt p1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.ta-c-leftt p2{ 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 5px;
+    color: #343434;
+}
+.ta-c-leftt button{
+    display: block;
+    background-color: black;
+    color: white;
+    height: 46px;
+    padding: 0 25px;
+    margin-top: 60px;
+    border-radius: 23px;
+}
+
+.ta-c-leftd{
+    padding: 45px 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.ta-c-leftd p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.ta-c-leftd p1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.ta-c-leftd p2{ 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 5px;
+    color: #343434;
+}
+.ta-c-leftd button{
+    display: block;
+    background-color: black;
+    color: white;
+    height: 46px;
+    padding: 0 25px;
+    margin-top: 60px;
+    border-radius: 23px;
+}
+
+.ta-c-right{
+    width: 63%;
+    text-align: left;
+}
+.ta-c-rightt{
+    width: 100%;
+    height: 63%;
+    background: url('../images/destination/perfect resorts.jpg');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ta-c-rightd{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    /* height: 37%; */
+    padding: 45px 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 40px;
+    margin-top: -38px;
+}
+.ta-c-rightd p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.ta-c-rightd p1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.ta-c-rightd p2{ 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 5px;
+    color: #343434;
+}
+.ta-c-rightd button{
+    display: block;
+    background-color: black; 
+    color: white;
+    height: 46px;
+    padding: 0 25px;
+    margin-top: 60px;
+    border-radius: 23px;
+}
+
+
+.ta-contents-2{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.ta-c-right-2{
+    width: 37%;
+    text-align: left;
+}
+.ta-c-rightt-2{
+    padding: 45px 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.ta-c-rightt-2 p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.ta-c-rightt-2 p1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.ta-c-rightt-2 p2{ 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 5px;
+    color: #343434;
+}
+.ta-c-rightt-2 button{
+    display: block;
+    background-color: black;
+    color: white;
+    height: 46px;
+    padding: 0 25px;
+    margin-top: 60px;
+    border-radius: 23px;
+}
+
+.ta-c-rightd-2{
+    padding: 45px 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.ta-c-rightd-2 p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.ta-c-rightd-2 p1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.ta-c-rightd-2 p2{ 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 5px;
+    color: #343434;
+}
+.ta-c-rightd-2 button{
+    display: block;
+    background-color: black;
+    color: white;
+    height: 46px;
+    padding: 0 25px;
+    margin-top: 60px;
+    border-radius: 23px;
+}
+
+.ta-c-left-2{
+    width: 63%;
+    text-align: left;
+}
+.ta-c-leftt-2{
+    width: 100%;
+    height: 63%;
+    background: url('../images/destination/morefun.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ta-c-leftd-2{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    /* height: 37%; */
+    padding: 45px 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 40px;
+    margin-top: -38px;
+}
+.ta-c-leftd-2 p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.ta-c-leftd-2 p1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.ta-c-leftd-2 p2{ 
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 5px;
+    color: #343434;
+}
+.ta-c-leftd-2 button{
+    display: block;
+    background-color: black; 
+    color: white;
+    height: 46px;
+    padding: 0 25px;
+    margin-top: 60px;
+    border-radius: 23px;
+}

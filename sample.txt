@@ -1,0 +1,24 @@
+SELECT `booking_id` 'booking_id', `user_id` 'user_id', CONCAT(users.FirstName , ' ' , users.LastName) 'Name' , resorts.resort_name 'resort' , `check_in_datetime` 'check_in_datetime', `check_out_datetime` 'check_out_datetime', `booking_status` 'status', resorts.price 'price'
+            FROM `bookings`
+            JOIN users ON users.UserID= bookings.user_id
+            JOIN resorts ON resorts.resort_id= bookings.resort_id
+            WHERE bookings.booking_status = 'Paid';
+
+
+             <?php
+                            if (mysqli_num_rows($result) > 0) {
+                                $totalPrice = 0;
+                                while ($row = mysqli_fetch_assoc($result)) {  
+                                    $booking_id = $row['booking_id'];
+                                    $user_name = $row["Name"];
+                                    $resort_name = $row["resort"];
+                                    $check_in = $row["check_in_datetime"];
+                                    $check_out = $row["check_out_datetime"];
+                                    $status = $row["status"];
+                                    $price = $row["price"];?>
+                                    
+
+                                    $totalPrice = $totalPrice + $price
+                            <?php    }
+                            }
+                            ?>

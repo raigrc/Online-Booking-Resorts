@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+section.signup-banner {
+  position: relative;
+  text-align: center;
+}
+section.signup-banner .signup-bg {
+  z-index: -99;
+  top: 0;
+  left: 0;
+}
+section.signup-banner .signup-txt {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.signup-banner .signup-txt h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+}
+section.signup-banner .signup-txt .signup-subheader {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+section.signup-banner .signup-txt .signup-subheader a {
+  color: black;
+}
+section.signup-banner .signup-txt .signup-subheader p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 70px;
+  margin: 0 0.5rem;
+}
+
+section.signup-form {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.signup-form label {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+section.signup-form form {
+  width: 677px;
+  height: auto;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 2em 0;
+}
+section.signup-form form .log-error {
+  width: 676px;
+  height: 60px;
+  border: 1px solid red;
+  background: #ffcccc;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+section.signup-form form .log-success {
+  width: 676px;
+  height: 60px;
+  border: 1px solid green;
+  background: rgb(204, 255, 204);
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+section.signup-form form input {
+  width: 676px;
+  height: 60px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  color: #343434;
+  padding: 0 0.5em;
+  margin: 1em 0 1.5em 0;
+}
+section.signup-form form .update-email {
+  display: flex;
+}
+section.signup-form form .update-email input {
+  width: 31px;
+  height: 28px;
+  border: 1px solid #6C6C6C;
+}
+section.signup-form form .update-email p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0.5em 0 0 1em;
+}
+section.signup-form form #signup-btn {
+  width: 676px;
+  height: 66px;
+  background: #000000;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 51px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+section.signup-form form #signup-btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+section.signup-form form .signup-alt {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 0 1em 0;
+}
+section.signup-form form .signup-socmed {
+  display: flex;
+}
+section.signup-form form .signup-socmed .signup-fb, section.signup-form form .signup-socmed .signup-google {
+  width: 328px;
+  height: 66px;
+  border: 1px solid #000000;
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em;
+  cursor: pointer;
+}
+section.signup-form form .signup-socmed .signup-fb p, section.signup-form form .signup-socmed .signup-google p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 51px;
+  margin: 0 0.5em;
+}
+section.signup-form form .signup-socmed .signup-fb:hover {
+  background: #1877F2;
+  color: white;
+}
+section.signup-form form .signup-socmed .signup-fb:hover img {
+  border: 1.5px solid white;
+  border-radius: 20px;
+}
+section.signup-form form .signup-socmed .signup-google:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+section.signup-form .form-alr-acc {
+  margin: 2em 0;
+}
+section.signup-form .form-alr-acc input {
+  width: 676px;
+  height: 66px;
+  border: 1px solid #000000;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 51px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+section.signup-form .form-alr-acc input:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}/*# sourceMappingURL=signup.css.map */

@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  height: auto;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  min-width: 1440px;
+}
+
+section.admin-nav {
+  position: relative;
+  width: 250px;
+  height: 100vh;
+  background: #069ABA;
+  padding: 2em 2em;
+}
+section.admin-nav .dashboard-logo {
+  margin: 0 0 2em 0;
+}
+section.admin-nav .dashboard-nav {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+section.admin-nav li {
+  margin: 1em 0;
+}
+section.admin-nav li a {
+  width: 192px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 0 0 1em;
+}
+section.admin-nav li a img {
+  width: 24px;
+  height: 24px;
+}
+section.admin-nav li a p {
+  margin: 0 0 0 1em;
+}
+section.admin-nav li a:hover {
+  background: #01150C;
+  border-radius: 4px;
+  border-left: 4px solid white;
+}
+section.admin-nav .report-nav {
+  margin: 1em 0 0 0;
+}
+section.admin-nav .report-nav h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+section.admin-nav .admin-logout {
+  width: 192px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+section.admin-nav .admin-logout img {
+  margin: 0 1em 0 0;
+}
+
+section.today-statistics {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 1em 1.5em;
+  background: #E8E8E8;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+section.today-statistics .stats-contents {
+  display: flex;
+}
+section.today-statistics .stats-header h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #525256;
+}
+section.today-statistics .stats-header p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #A3A3A3;
+}
+section.today-statistics .income-stats {
+  background: #FDFDFD;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  border-radius: 8px;
+  width: 388px;
+  height: 290px;
+  padding: 1em;
+  margin: 1em 2em 0 0;
+}
+section.today-statistics .income-stats .income-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2);
+  padding: 0.5em 0;
+}
+section.today-statistics .income-stats .income-header h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #656575;
+}
+section.today-statistics .income-stats .income-header h3 {
+  background: #F4F5F7;
+  width: 52px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.today-statistics .income-stats .income-today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
+}
+section.today-statistics .income-stats .income-today h1 {
+  font-weight: 700;
+  font-size: 90px;
+  color: #01150C;
+}
+section.today-statistics .income-stats .income-today p {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.009em;
+  color: #FF2727;
+}
+section.today-statistics .income-stats .income-compare {
+  font-weight: 300;
+  font-size: 14px;
+  color: #656575;
+  margin: 0 0 1em 0;
+}
+section.today-statistics .income-stats .income-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.today-statistics .income-stats .income-week h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #525256;
+}
+section.today-statistics .income-stats .income-week p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #525256;
+}
+section.today-statistics .expenses-stats {
+  background: #FDFDFD;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  border-radius: 8px;
+  width: 388px;
+  height: 290px;
+  padding: 1em;
+  margin: 1em 2em 0 0;
+}
+section.today-statistics .expenses-stats .expenses-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2);
+  padding: 0.5em 0;
+}
+section.today-statistics .expenses-stats .expenses-header h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #656575;
+}
+section.today-statistics .expenses-stats .expenses-header h3 {
+  background: #F4F5F7;
+  width: 52px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.today-statistics .expenses-stats .expenses-today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
+}
+section.today-statistics .expenses-stats .expenses-today h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: #01150C;
+}
+section.today-statistics .expenses-stats .expenses-today p {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.009em;
+  color: #FF2727;
+}
+section.today-statistics .expenses-stats .expenses-compare {
+  font-weight: 300;
+  font-size: 14px;
+  color: #656575;
+  margin: 0 0 1em 0;
+}
+section.today-statistics .expenses-stats .expenses-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.today-statistics .expenses-stats .expenses-week h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #525256;
+}
+section.today-statistics .expenses-stats .expenses-week p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #525256;
+}
+section.today-statistics .users-stats {
+  background: #FDFDFD;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  border-radius: 8px;
+  width: 388px;
+  height: 290px;
+  padding: 1em;
+  margin: 1em 0 0 0;
+}
+section.today-statistics .users-stats .users-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2);
+  padding: 0.5em 0;
+}
+section.today-statistics .users-stats .users-header h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #656575;
+}
+section.today-statistics .users-stats .users-header h3 {
+  background: #F4F5F7;
+  width: 52px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.today-statistics .users-stats .users-today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
+}
+section.today-statistics .users-stats .users-today h1 {
+  font-weight: 700;
+  font-size: 90px;
+  color: #01150C;
+}
+section.today-statistics .users-stats .users-today p {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.009em;
+  color: #FF2727;
+}
+section.today-statistics .users-stats .users-compare {
+  font-weight: 300;
+  font-size: 14px;
+  color: #656575;
+  margin: 0 0 1em 0;
+}
+section.today-statistics .users-stats .users-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.today-statistics .users-stats .users-week h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #525256;
+}
+section.today-statistics .users-stats .users-week p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #525256;
+}
+section.today-statistics .bookings-cancelled {
+  width: 288px;
+  height: 360px;
+  background: #FDFDFD;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0 0 0;
+}
+section.today-statistics .bookings-cancelled .bookings-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2);
+  padding: 0.5em 0;
+}
+section.today-statistics .bookings-cancelled .bookings-header h1 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #656575;
+}
+section.today-statistics .bookings-cancelled .bookings-header h3 {
+  background: #F4F5F7;
+  width: 52px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.today-statistics .bookings-cancelled .bookings-graph {
+  text-align: center;
+}
+section.today-statistics .bookings-cancelled .bookings-graph .bookings-piechart {
+  margin: 1em 0;
+}
+section.today-statistics .bookings-cancelled .bookings-legend .legend-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+}
+section.today-statistics .bookings-cancelled .bookings-legend .legend-item .item-left {
+  display: flex;
+}
+section.today-statistics .bookings-cancelled .bookings-legend .legend-item .item-left img {
+  margin: 0 1em 0 0;
+}
+section.today-statistics .bookings-cancelled .bookings-legend .legend-item .item-right span {
+  color: #F2BB47;
+}
+section.today-statistics .bookings-cancelled .bookings-legend .legend-item .item-right spandown {
+  color: #069ABA;
+}
+
+section.admin-dashboard-content {
+  width: auto;
+  height: 100vh;
+  padding: 1em 1.5em 2em 1.5em;
+  position: relative;
+  overflow-y: auto;
+}
+section.admin-dashboard-content .notif-search {
+  display: flex;
+  justify-content: end;
+  padding: 0 2em 0 0;
+}
+section.admin-dashboard-content .notif-search img {
+  cursor: pointer;
+  margin: 0 1em;
+}
+section.admin-dashboard-content .notif-search form {
+  position: relative;
+}
+section.admin-dashboard-content .notif-search form input {
+  padding: 0 2.7em 0 1em;
+  width: 366px;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.70309px 27.0309px rgba(69, 69, 80, 0.1);
+  border-radius: 12px;
+}
+section.admin-dashboard-content .notif-search form img {
+  position: absolute;
+  right: 0;
+  top: 0.7em;
+  cursor: pointer;
+}
+section.admin-dashboard-content .dashboard-sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability {
+  width: 824px;
+  height: 160px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  border-radius: 8px;
+  padding: 1.5em;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability .availability-header {
+  margin: 0 0 1.5em 0;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability .availability-header h1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1A1919;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form #resortnum {
+  width: 231px;
+  height: 48px;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 1em 0 0;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form #resortnum option {
+  font-weight: 400;
+  font-size: 16px;
+  color: #656575;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form #date {
+  width: 188px;
+  height: 48px;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px 0px 0px;
+  text-align: center;
+  padding: 0 0 0 2em;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form .date-container {
+  position: relative;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form input[type=date]::-webkit-calendar-picker-indicator {
+  background: url("/images/admin-dashboard/calendar-icon.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 2em;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form .time-container {
+  position: relative;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form .time-container img {
+  position: absolute;
+  left: 2em;
+  top: 0.7em;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form #time {
+  width: 167px;
+  height: 48px;
+  border: 1px solid #DEDEDE;
+  border-radius: 0px 8px 8px 0px;
+  text-align: center;
+  padding: 0 0 0 2em;
+}
+section.admin-dashboard-content .dashboard-sub-container .resort-availability form input[type=button] {
+  width: 123px;
+  height: 48px;
+  background: #000000;
+  border-radius: 33px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0 1.5em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status {
+  width: 824px;
+  height: 302px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  padding: 1.5em 2em;
+  overflow-y: scroll;
+  margin: 1em 0;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status .status-header {
+  display: flex;
+  justify-content: space-between;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status .status-header h1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1A1919;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status .status-header .status-filter {
+  display: flex;
+  margin: 0 4em 0 0;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status .status-header .status-filter img {
+  margin: 0 0.5em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table {
+  width: 100%;
+  text-align: left;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table td, section.admin-dashboard-content .dashboard-sub-container .live-resort-status table th {
+  padding: 1em 0;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table th {
+  font-weight: 300;
+  font-size: 14px;
+  color: #656575;
+  padding: 1em 0;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .h-resort-name {
+  padding-left: 2em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .h-status {
+  padding-left: 2em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-table {
+  margin: 0 2em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-number {
+  font-weight: 400;
+  font-size: 12px;
+  color: #1A1919;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-resort-id {
+  width: 66px;
+  height: 24px;
+  background: rgba(153, 153, 153, 0.1);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1A1919;
+  text-align: center;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-resort-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1A1919;
+  padding: 0 0 0 1em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-status {
+  font-weight: 200;
+  font-size: 16px;
+  color: #656575;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-status img {
+  margin: 0 0.5em;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-earnings {
+  font-weight: 300;
+  font-size: 16px;
+  color: #656575;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-btn {
+  width: 87px;
+  height: 32px;
+}
+section.admin-dashboard-content .dashboard-sub-container .live-resort-status table .d-btn button {
+  width: 87px;
+  height: 32px;
+  background: #000000;
+  border-radius: 33px;
+  color: #FFFFFF;
+}
+section.admin-dashboard-content .dashboard-sub-container .earning-summary {
+  width: 824px;
+  height: 286px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(69, 69, 80, 0.1);
+  border-radius: 8px;
+  padding: 2em 1em;
+}
+section.admin-dashboard-content .dashboard-sub-container .earning-summary .summary-header {
+  display: flex;
+  justify-content: space-between;
+}
+section.admin-dashboard-content .dashboard-sub-container .earning-summary .summary-header .header-left {
+  display: flex;
+  align-items: center;
+}
+section.admin-dashboard-content .dashboard-sub-container .earning-summary .summary-header .header-right {
+  display: flex;
+  align-items: center;
+}
+section.admin-dashboard-content .dashboard-sub-container .earning-summary .summary-header .header-right p {
+  margin: 0 0.5em;
+}
+section.admin-dashboard-content .dashboard-sub-container .earning-summary .summary-graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=admin-dashboard.css.map */
